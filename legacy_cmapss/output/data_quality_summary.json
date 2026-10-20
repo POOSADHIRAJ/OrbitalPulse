@@ -1,0 +1,25 @@
+{
+  "run_timestamp_utc": "2026-10-16T15:26:50.294895+00:00",
+  "source_file": "test_FD001.txt",
+  "topic": "engine-telemetry",
+  "configured_row_limit": 100,
+  "counts": {
+    "non_empty_source_rows_examined": 100,
+    "blank_lines_skipped": 0,
+    "rows_parsed_successfully": 100,
+    "source_rows_rejected": 0,
+    "records_published": 100,
+    "records_consumed": 100,
+    "valid_records": 100,
+    "invalid_records": 0,
+    "anomaly_alerts": 0
+  },
+  "checks": {
+    "source_counts_reconcile": true,
+    "published_equals_consumed": true,
+    "consumed_equals_valid_plus_invalid": true,
+    "all_counts_reconcile": true
+  },
+  "status": "SUCCESS",
+  "error": null
+}

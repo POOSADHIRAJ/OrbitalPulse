@@ -1,0 +1,6 @@
+# Runtime (kafka-python is only needed for the optional streaming path)
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.12
+python-multipart>=0.0.9
+kafka-python==3.0.11

@@ -1,0 +1,48 @@
+{
+  "_comment": "SYNTHETIC DEMONSTRATION SETTINGS - not engineering limits.",
+  "version": "settings-1",
+  "limits": {
+    "max_upload_mb": 25,
+    "max_page_size": 1000,
+    "default_page_size": 100,
+    "max_chart_points": 1500
+  },
+  "kafka": {
+    "bootstrap_servers": "127.0.0.1:9092",
+    "topic_raw": "orbitalpulse.telemetry.raw",
+    "consumer_group": "orbitalpulse-consumer",
+    "batch_size": 500,
+    "partition_key": "test_run_id|sensor_id"
+  },
+  "quality": {
+    "late_event_seconds": 5.0,
+    "gap_factor": 3.0,
+    "interval_tolerance_factor": 0.5,
+    "flatline_min_samples": 15,
+    "flatline_epsilon_rel": 1e-09,
+    "run_rate_consistency_tolerance": 0.15
+  },
+  "anomaly": {
+    "min_samples": 20,
+    "spike_window": 25,
+    "spike_min_history": 10,
+    "spike_robust_z": 8.0,
+    "spike_min_rel_change": 0.15,
+    "drift_min_samples": 60,
+    "drift_rel_change": 0.25,
+    "drift_monotonic_fraction": 0.7,
+    "missing_burst_factor": 5.0,
+    "interval_cv_threshold": 0.5,
+    "cross_sensor_mismatch_s": 2.0,
+    "flatline_min_samples": 15,
+    "drift_settle_fraction": 0.1,
+    "spike_revert_samples": 4
+  },
+  "expected_phase_order": [
+    "PREPARATION",
+    "STARTUP",
+    "TEST_WINDOW",
+    "SHUTDOWN",
+    "POST_TEST"
+  ]
+}

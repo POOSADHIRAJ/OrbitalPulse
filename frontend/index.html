@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrbitalPulse - Telemetry Data Platform (synthetic data)</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="banner" role="note">SYNTHETIC DATA - independent educational prototype. Not RATLOG software, not validated on real rocket-engine data. Offline analytics only; not for control or safety-critical use.</div>
+<div class="shell">
+  <nav class="side" aria-label="Main">
+    <div class="brand">ORBITAL<span>PULSE</span><small>telemetry data platform</small></div>
+    <a href="#/overview" data-page="overview">Overview</a>
+    <a href="#/runs" data-page="runs">Campaigns &amp; Runs</a>
+    <a href="#/explorer" data-page="explorer">Telemetry Explorer</a>
+    <a href="#/quality" data-page="quality">Data Quality</a>
+    <a href="#/anomalies" data-page="anomalies">Anomalies</a>
+    <a href="#/compare" data-page="compare">Run Comparison</a>
+    <a href="#/ingest" data-page="ingest">Ingestion &amp; Pipeline</a>
+    <a href="#/settings" data-page="settings">Settings</a>
+    <div class="side-foot"><span id="modeBadge" class="badge">...</span><a href="/docs" target="_blank" rel="noopener">API docs</a></div>
+  </nav>
+  <main id="app" aria-live="polite"></main>
+</div>
+<div id="toast" role="status"></div>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

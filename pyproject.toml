@@ -1,0 +1,19 @@
+[project]
+name = "orbitalpulse"
+version = "0.1.0"
+description = "Rocket test data pipeline and telemetry intelligence platform (synthetic data, educational prototype)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py311"
+extend-exclude = ["legacy_cmapss", "kafka_2.13-4.1.2", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "E701", "E702", "E731", "B008", "UP037", "UP006", "UP007", "UP035", "E741", "B905", "UP042"]

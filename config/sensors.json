@@ -1,0 +1,188 @@
+{
+  "_comment": "SYNTHETIC DEMONSTRATION SETTINGS. Names, bounds and ranges are illustrative and are NOT engineering limits for any real engine or test stand.",
+  "version": "sensors-1",
+  "sensors": [
+    {
+      "sensor_id": "chamber_pressure",
+      "display_name": "Chamber pressure",
+      "unit": "bar",
+      "description": "Synthetic chamber pressure channel",
+      "data_type": "float",
+      "expected_interval_s": 0.1,
+      "validation_min": -1.0,
+      "validation_max": 120.0,
+      "operating_min": -1.0,
+      "operating_max": 60.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 1.0,
+        "peak": 42.0,
+        "noise_sd": 0.35
+      }
+    },
+    {
+      "sensor_id": "feed_line_pressure",
+      "display_name": "Feed line pressure",
+      "unit": "bar",
+      "description": "Synthetic feed-line pressure channel",
+      "data_type": "float",
+      "expected_interval_s": 0.1,
+      "validation_min": -1.0,
+      "validation_max": 150.0,
+      "operating_min": -1.0,
+      "operating_max": 75.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 2.0,
+        "peak": 55.0,
+        "noise_sd": 0.45
+      }
+    },
+    {
+      "sensor_id": "temperature",
+      "display_name": "Structure temperature",
+      "unit": "degC",
+      "description": "Synthetic structure temperature channel",
+      "data_type": "float",
+      "expected_interval_s": 0.5,
+      "validation_min": -60.0,
+      "validation_max": 1500.0,
+      "operating_min": 10.0,
+      "operating_max": 600.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 25.0,
+        "peak": 380.0,
+        "noise_sd": 2.0,
+        "lag": true,
+        "tau_s": 3.0
+      }
+    },
+    {
+      "sensor_id": "thrust_measurement",
+      "display_name": "Thrust measurement",
+      "unit": "N",
+      "description": "Synthetic thrust channel",
+      "data_type": "float",
+      "expected_interval_s": 0.1,
+      "validation_min": -50.0,
+      "validation_max": 20000.0,
+      "operating_min": -200.0,
+      "operating_max": 9000.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 0.0,
+        "peak": 6500.0,
+        "noise_sd": 40.0
+      }
+    },
+    {
+      "sensor_id": "vibration_rms",
+      "display_name": "Vibration RMS",
+      "unit": "g_rms",
+      "description": "Synthetic vibration RMS channel",
+      "data_type": "float",
+      "expected_interval_s": 0.1,
+      "validation_min": 0.0,
+      "validation_max": 80.0,
+      "operating_min": -0.5,
+      "operating_max": 25.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 1.0,
+        "peak": 8.0,
+        "noise_sd": 0.15
+      }
+    },
+    {
+      "sensor_id": "valve_position",
+      "display_name": "Valve position",
+      "unit": "percent",
+      "description": "Synthetic valve position channel",
+      "data_type": "float",
+      "expected_interval_s": 0.5,
+      "validation_min": 0.0,
+      "validation_max": 100.0,
+      "operating_min": -1.0,
+      "operating_max": 100.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 0.0,
+        "peak": 85.0,
+        "noise_sd": 0.2
+      }
+    },
+    {
+      "sensor_id": "propellant_flow_measurement",
+      "display_name": "Propellant flow",
+      "unit": "kg/s",
+      "description": "Synthetic flow channel",
+      "data_type": "float",
+      "expected_interval_s": 0.2,
+      "validation_min": -0.5,
+      "validation_max": 40.0,
+      "operating_min": -0.6,
+      "operating_max": 18.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 0.0,
+        "peak": 9.5,
+        "noise_sd": 0.12
+      }
+    },
+    {
+      "sensor_id": "load_cell_measurement",
+      "display_name": "Load cell",
+      "unit": "N",
+      "description": "Synthetic load-cell channel",
+      "data_type": "float",
+      "expected_interval_s": 0.2,
+      "validation_min": -100.0,
+      "validation_max": 25000.0,
+      "operating_min": -200.0,
+      "operating_max": 10000.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 0.0,
+        "peak": 6400.0,
+        "noise_sd": 45.0
+      }
+    },
+    {
+      "sensor_id": "ambient_temperature",
+      "display_name": "Ambient temperature",
+      "unit": "degC",
+      "description": "Synthetic ambient temperature channel",
+      "data_type": "float",
+      "expected_interval_s": 1.0,
+      "validation_min": -40.0,
+      "validation_max": 60.0,
+      "operating_min": 0.0,
+      "operating_max": 45.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 27.0,
+        "peak": 27.0,
+        "noise_sd": 0.05
+      }
+    },
+    {
+      "sensor_id": "sensor_supply_voltage",
+      "display_name": "Sensor supply voltage",
+      "unit": "V",
+      "description": "Synthetic sensor supply voltage channel",
+      "data_type": "float",
+      "expected_interval_s": 1.0,
+      "validation_min": 0.0,
+      "validation_max": 36.0,
+      "operating_min": 24.0,
+      "operating_max": 30.0,
+      "enabled": true,
+      "synthetic_profile": {
+        "idle": 28.0,
+        "peak": 28.0,
+        "noise_sd": 0.03
+      }
+    }
+  ]
+}

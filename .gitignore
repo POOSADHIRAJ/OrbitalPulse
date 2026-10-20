@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+data/
+.env
+*.log
+# Kafka distribution and archives (large; download separately)
+kafka_2.13-*/
+kafka.tgz
+# Legacy local backups
+legacy_cmapss/backups/
