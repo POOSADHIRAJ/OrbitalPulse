@@ -22,15 +22,6 @@ A streaming-first telemetry data platform that ingests simulated ground-test dat
 | Dashboard start/stop of Kafka producer/consumer | Partial |
 | Docker Compose, dbt, GitHub Actions, data-quality score, Parquet, auth | Planned / not implemented |
 
-## Screenshots (captured from the running app, synthetic data)
-![Overview](docs/screenshots/01-overview.png)
-![Run timeline](docs/screenshots/02-runs-timeline.png)
-![Explorer](docs/screenshots/03-explorer.png)
-![Data quality](docs/screenshots/04-quality.png)
-![Anomaly evidence](docs/screenshots/05-anomalies.png)
-![Run comparison](docs/screenshots/06-compare.png)
-![Ingestion](docs/screenshots/07-ingest.png)
-![Settings](docs/screenshots/08-settings.png)
 
 ## Architecture
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (Mermaid diagram, storage, delivery semantics, anomaly design). Also: [DATA_DICTIONARY](docs/DATA_DICTIONARY.md), [RUNBOOK](docs/RUNBOOK.md), [DEMO_SCRIPT](docs/DEMO_SCRIPT.md), [ENGINEERING_DECISIONS](docs/ENGINEERING_DECISIONS.md), [IMPLEMENTATION_CHECKLIST](docs/IMPLEMENTATION_CHECKLIST.md).
