@@ -1,6 +1,6 @@
 # OrbitalPulse - Rocket Test Data Pipeline and Telemetry Intelligence Platform
 
-> **SYNTHETIC DATA. Independent educational prototype.** Not RATLOG software, not endorsed by RATLOG, not validated with real rocket-engine test data. Thresholds are demonstration settings, not engineering limits. Offline analytics only - not for engine control, launch authorization, or safety-critical monitoring.
+> **SYNTHETIC DATA. Independent educational prototype.**  Not validated with real rocket-engine test data. Thresholds are demonstration settings, not engineering limits. Offline analytics only - not for engine control, launch authorization, or safety-critical monitoring.
 
 A streaming-first telemetry data platform that ingests simulated ground-test data (CSV or Kafka), validates every record, preserves raw evidence, quarantines bad data, flags suspicious patterns with explainable rules, compares runs, and produces reports.
 
@@ -90,6 +90,3 @@ No real rocket-test data was used; no propulsion limits are validated; findings 
 
 ## Roadmap
 Migration framework, data-quality score, Parquet export, GitHub Actions CI, Docker Compose, PDF reports, chart zoom, auth, consumer-lag history.
-
-## Legacy work
-Your earlier NASA C-MAPSS turbofan pipeline is preserved in [`legacy_cmapss/`](legacy_cmapss/README_cmapss.md) (code, tests, outputs, backups).
